@@ -1,0 +1,47 @@
+---
+# Source: polygon-edge-k8s/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: RELEASE-NAME-polygon-edge-k8s
+  labels:
+    helm.sh/chart: polygon-edge-k8s-0.1.0
+    app.kubernetes.io/name: polygon-edge-k8s
+    app.kubernetes.io/instance: RELEASE-NAME
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: polygon-edge-k8s
+      app.kubernetes.io/instance: RELEASE-NAME
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: polygon-edge-k8s
+        app.kubernetes.io/instance: RELEASE-NAME
+    spec:
+      serviceAccountName: RELEASE-NAME-polygon-edge-k8s
+      securityContext:
+        {}
+      containers:
+        - name: polygon-edge-k8s
+          securityContext:
+            {}
+          image: "0xpolygon/polygon-edge:latest"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {}

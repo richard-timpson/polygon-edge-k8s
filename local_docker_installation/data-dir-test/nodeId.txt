@@ -1,0 +1,5 @@
+
+[SECRETS INIT]
+Public key (address) = 0xa436E3d38a0a4fB41a6ab46140530934EA04D35A
+Node ID              = 16Uiu2HAm9xFEvUgmXh72CG8zL1YZJgUV7GbDgs7b7cHMsmAxT3k5
+

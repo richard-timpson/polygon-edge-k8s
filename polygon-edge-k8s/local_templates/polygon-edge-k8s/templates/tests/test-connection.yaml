@@ -1,0 +1,21 @@
+---
+# Source: polygon-edge-k8s/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "RELEASE-NAME-polygon-edge-k8s-test-connection"
+  labels:
+    helm.sh/chart: polygon-edge-k8s-0.1.0
+    app.kubernetes.io/name: polygon-edge-k8s
+    app.kubernetes.io/instance: RELEASE-NAME
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['RELEASE-NAME-polygon-edge-k8s:80']
+  restartPolicy: Never

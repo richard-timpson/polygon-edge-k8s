@@ -1,0 +1,36 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: genesis
+  labels:
+    {{- include "polygon-edge-k8s.labels" . | nindent 4 }}
+spec:
+  template:
+    spec:
+      volumes:
+      - name: data-dirs
+        persistentVolumeClaim:
+          claimName: data-dir-pvc
+      containers:
+      - name: polygon-edge-genesis
+        image: "richt3211/polygon-edge-k8s:latest"
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
+        volumeMounts:
+        - mountPath: "/usr/share/polygon-edge/data-dirs"
+          name: data-dirs
+        env:
+        - name: MY_POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: MY_POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: MY_POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+      restartPolicy: Never
+  backoffLimit: 4

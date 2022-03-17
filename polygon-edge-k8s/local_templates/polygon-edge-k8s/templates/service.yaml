@@ -1,0 +1,22 @@
+---
+# Source: polygon-edge-k8s/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: RELEASE-NAME-polygon-edge-k8s
+  labels:
+    helm.sh/chart: polygon-edge-k8s-0.1.0
+    app.kubernetes.io/name: polygon-edge-k8s
+    app.kubernetes.io/instance: RELEASE-NAME
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: polygon-edge-k8s
+    app.kubernetes.io/instance: RELEASE-NAME

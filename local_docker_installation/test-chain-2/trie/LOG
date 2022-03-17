@@ -1,0 +1,32 @@
+=============== Mar 11, 2022 (UTC) ===============
+06:34:25.825215 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+06:34:25.832875 db@open opening
+06:34:25.836210 version@stat F·[] S·0B[] Sc·[]
+06:34:25.838199 db@janitor F·2 G·0
+06:34:25.838605 db@open done T·5.366828ms
+06:37:21.556074 db@close closing
+06:37:21.556499 db@close done T·424.089µs
+=============== Mar 11, 2022 (UTC) ===============
+06:37:55.521312 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+06:37:55.525406 version@stat F·[] S·0B[] Sc·[]
+06:37:55.525813 db@open opening
+06:37:55.526329 journal@recovery F·1
+06:37:55.526733 journal@recovery recovering @1
+06:37:55.531582 memdb@flush created L0@2 N·3 S·412B "N>\x8f..\xb9v_,v1":"Y\x1d\xeb..\xac\x11\x9f,v2"
+06:37:55.533958 version@stat F·[1] S·412B[412B] Sc·[0.25]
+06:37:55.548509 db@janitor F·3 G·0
+06:37:55.548948 db@open done T·22.690945ms
+06:39:15.918675 db@close closing
+06:39:15.919921 db@close done T·1.255ms
+=============== Mar 11, 2022 (UTC) ===============
+06:40:01.090529 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+06:40:01.095134 version@stat F·[1] S·412B[412B] Sc·[0.25]
+06:40:01.095686 db@open opening
+06:40:01.096175 journal@recovery F·1
+06:40:01.096697 journal@recovery recovering @3
+06:40:01.101338 memdb@flush created L0@5 N·3 S·412B "N>\x8f..\xb9v_,v5":"Y\x1d\xeb..\xac\x11\x9f,v6"
+06:40:01.103601 version@stat F·[2] S·824B[824B] Sc·[0.50]
+06:40:01.117703 db@janitor F·4 G·0
+06:40:01.118147 db@open done T·22.10319ms
+06:48:11.917817 db@close closing
+06:48:11.918928 db@close done T·1.518437ms

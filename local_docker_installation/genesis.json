@@ -1,0 +1,47 @@
+{
+    "name": "polygon-edge",
+    "genesis": {
+        "nonce": "0x0000000000000000",
+        "timestamp": "0x0",
+        "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000f858f8549440dd3027808961c2798f244b28192f125c6b22dd94f7463003bb03d7f349e5c7d55cf1246649f163e9947b51e870ba4eaa3618f473e97f5b3d17b85fc0c99409616664d340cd1a3638e57032d65bd4f1c7662f80c0",
+        "gasLimit": "0x500000",
+        "difficulty": "0x1",
+        "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "coinbase": "0x0000000000000000000000000000000000000000",
+        "alloc": {
+            "0x1010101010101010101010101010101010101010": {
+                "balance": "0x3635c9adc5dea00000"
+            },
+            "0x1010101010101010101010101010101010101011": {
+                "balance": "0x3635c9adc5dea00000"
+            }
+        },
+        "number": "0x0",
+        "gasUsed": "0x70000",
+        "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "params": {
+        "forks": {
+            "homestead": 0,
+            "byzantium": 0,
+            "constantinople": 0,
+            "petersburg": 0,
+            "istanbul": 0,
+            "EIP150": 0,
+            "EIP158": 0,
+            "EIP155": 0
+        },
+        "chainID": 100,
+        "engine": {
+            "ibft": {
+                "epochSize": 100000,
+                "type": "PoA"
+            }
+        },
+        "blockGasTarget": 0
+    },
+    "bootnodes": [
+        "/ip4/127.0.0.1/tcp/10001/p2p/16Uiu2HAmAHFeVWG1YPkNCqRoGKQXUx31Zh3VTeAqLt5T5hQKd1tm",
+        "/ip4/127.0.0.1/tcp/20001/p2p/16Uiu2HAm36cAScWXyPSryArDoChxNGhy85uMdG3F2mRGrNzbnyhc"
+    ]
+}
