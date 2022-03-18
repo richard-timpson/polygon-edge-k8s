@@ -1,32 +1,6 @@
-=============== Mar 11, 2022 (UTC) ===============
-06:34:15.579620 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-06:34:15.587801 db@open opening
-06:34:15.591288 version@stat F·[] S·0B[] Sc·[]
-06:34:15.594109 db@janitor F·2 G·0
-06:34:15.594578 db@open done T·6.461187ms
-06:37:26.329012 db@close closing
-06:37:26.329517 db@close done T·504.42µs
-=============== Mar 11, 2022 (UTC) ===============
-06:38:36.996214 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-06:38:37.000448 version@stat F·[] S·0B[] Sc·[]
-06:38:37.000907 db@open opening
-06:38:37.001591 journal@recovery F·1
-06:38:37.002186 journal@recovery recovering @1
-06:38:37.006260 memdb@flush created L0@2 N·3 S·412B "N>\x8f..\xb9v_,v1":"Y\x1d\xeb..\xac\x11\x9f,v2"
-06:38:37.008425 version@stat F·[1] S·412B[412B] Sc·[0.25]
-06:38:37.022087 db@janitor F·3 G·0
-06:38:37.022708 db@open done T·21.254814ms
-06:39:07.212527 db@close closing
-06:39:07.213509 db@close done T·983.135µs
-=============== Mar 11, 2022 (UTC) ===============
-06:40:19.074688 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-06:40:19.079393 version@stat F·[1] S·412B[412B] Sc·[0.25]
-06:40:19.079795 db@open opening
-06:40:19.080403 journal@recovery F·1
-06:40:19.080970 journal@recovery recovering @3
-06:40:19.086053 memdb@flush created L0@5 N·3 S·412B "N>\x8f..\xb9v_,v5":"Y\x1d\xeb..\xac\x11\x9f,v6"
-06:40:19.088003 version@stat F·[2] S·824B[824B] Sc·[0.50]
-06:40:19.125729 db@janitor F·4 G·0
-06:40:19.126203 db@open done T·45.960978ms
-06:48:07.899049 db@close closing
-06:48:07.906220 db@close done T·7.148816ms
+=============== Mar 18, 2022 (UTC) ===============
+18:03:38.876237 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:03:38.893490 db@open opening
+18:03:38.899463 version@stat F·[] S·0B[] Sc·[]
+18:03:38.907440 db@janitor F·2 G·0
+18:03:38.908265 db@open done T·14.2568ms
